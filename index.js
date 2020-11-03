@@ -1,16 +1,20 @@
-import { emojis } from "./emojis";
-import array from "lodash";
+const _ = require("lodash");
+const { emojis } = require("./emojis");
 
-export const isOneEmoji = (string) =>
+const isOneEmoji = (string) =>
   typeof string === "string" ? stringIsEmoji(string.trim()) : false;
 
-export const isMultipleEmoji = (string) =>
+const isMultipleEmoji = (string) =>
   typeof string === "string"
-    ? allStringsAreEmoji(array.toArray(string.trim()))
+    ? allStringsAreEmoji(_.toArray(string.trim()))
     : false;
 
-const stringIsEmoji = (string) =>
-  emojis.some((emoji) => emoji.character === string);
+const stringIsEmoji = (string) => emojis.some((emoji) => emoji === string);
 
 const allStringsAreEmoji = (array) =>
-  array.every((element) => stringIsEmoji(element));
+  array.length > 0 && array.every((element) => stringIsEmoji(element));
+
+module.exports = {
+  isOneEmoji,
+  isMultipleEmoji,
+};

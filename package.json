@@ -1,6 +1,6 @@
 {
   "name": "is-emojis",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "Library to identify strings containing one or multiple emojis only",
   "main": "index.js",
   "scripts": {
