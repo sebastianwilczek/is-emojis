@@ -1,0 +1,26 @@
+{
+  "name": "is-emojis",
+  "version": "1.0.0",
+  "description": "Library to identify strings containing one or multiple emojis only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianwilczek/is-emojis.git"
+  },
+  "keywords": [
+    "emoji",
+    "emojis"
+  ],
+  "author": "Sebastian Wilczek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastianwilczek/is-emojis/issues"
+  },
+  "homepage": "https://github.com/sebastianwilczek/is-emojis#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
